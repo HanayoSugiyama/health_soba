@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蕎麦処健康堂</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery -->
+    <script src="js/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+    <!--モーダル-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <!--ファビコン-->
+    <link rel="icon" href="images/icon_soba.gif">
+</head>
+
+<body>
+    <header>
+
+        <div class="header-wrapper">
+            <h1>
+                <a href="#">蕎麦処 健康堂</a>
+            </h1>
+            <!-- ドロワーボタン -->
+            <div class="header-right">
+                <div class="menu-btn sp" id="js_btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <span class="menu-btn" data-txt-menu="MENU" data-txt-close="CLOSE"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="gnav">
+        <ul class="gnav-wrapper">
+            <li class="gnav-item"><a href="#">ホーム</a></li>
+            <li class="gnav-item"><a href="#efficacy">蕎麦の効能</a></li>
+            <li class="gnav-item"><a href="#sticking">当店のこだわり</a></li>
+            <li class="gnav-item"><a href="#menu">お品書き</a></li>
+            <li class="gnav-item"><a href="#access-link">アクセス</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero wrapper-hero">
+        <img src="images/soba.gif" alt="" class="hero-img">
+    </div>
+    <div id="loop" class="loop-sobauti">
+        <img src="images/index/sobauti1.jpg" alt="蕎麦打ち工程">
+        <img src="images/index/sobauti1.jpg" alt="蕎麦打ち工程">
+    </div>
+
+    <section id="efficacy" class="efficacy wrapper">
+        <h2>蕎麦の効能</h2>
+        <div class="main">
+            <div class="main-text">
+                <p>
+                    蕎麦は、穀物類の中では栄養素が高く、良質な栄養素が含まれています<br>
+                    生活習慣病の予防や、美容効果も期待できる蕎麦を是非お召し上がりください
+                </p>
+                <div class="hear">
+                    <a href="health.html" target="_blank">
+                        <img src="images/index/kotira.gif" alt="詳しくはこちら">
+                    </a>
+                </div>
+            </div>
+            <div class="main-img">
+                <img src="images/index/sobayu.jpg" alt="蕎麦湯">
+            </div>
+        </div>
+    </section>
+    <!--/.efficcacy-->
+
+    <section id="sticking" class="sticking wrapper">
+        <h2>蕎麦処健康堂のこだわり</h2>
+        <div class="no-main">
+            <div class="no-main-text">
+                <p>
+                    可部線の終着駅近くにある、原材料にとことんこだわった蕎麦屋です。<br>
+                    現役を退いた”ガンコ爺さん”二人（豊平流蕎麦打ち段位 ４段）が精魂込めてそばを打ちます。<br>
+                    <small>画像をクリックしてください</small>
+                </p>
+            </div>
+            <div class="main-img gri">
+                <ul class="info-list">
+                    <li><a href="#soba" class="info"><img src="images/index/soba.jpg" alt="蕎麦の実"></a></li>
+                </ul>
+                <ul class="info-list">
+                    <li><a href="#water" class="info"><img src="images/index/water.jpg" alt="清流"></a></li>
+                </ul>
+                <ul class="info-list">
+                    <li><a href="#soup" class="info"><img src="images/index/soup.jpg" alt="つゆ"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section id="soba" class="hide-area">
+            <h2>とよむすめ</h2>
+            <img src="images/index/soba.jpg" alt="蕎麦の実">
+            <p>ルチン含有量が「信濃１号」に比べ４割多く、食味が良い特性を持ったそば粉を使用しています</p>
+        </section>
+        <section id="water" class="hide-area">
+            <h2>おいしい水</h2>
+            <img src="images/index/water.jpg" alt="清流">
+            <p>旧厚生省「おいしい水の要件」に合致する、「まれにみる軟水の名水」と認証された水を使用しています</p>
+        </section>
+        <section id="soup" class="hide-area">
+            <h2>そばつゆ</h2>
+            <img src="images/index/soup.jpg" alt="つゆ">
+            <p>化学調味料無添加で「魚醤」と「海人の藻塩（広島県上蒲刈島産）」を加えた奥深いコクと風味に仕上げたそばつゆです</p>
+        </section>
+    </section>
+    <!--/.sticking-->
+
+
+    <section id="menu" class="menu wrapper">
+        <h2>お品書き</h2>
+        <div class="grid">
+
+            <div class="grid-img">
+                <div>
+                    <p>冷たいお蕎麦</p>
+                </div>
+                <div class="hover">
+                    <div class="hover-img"><img src="images/index/zaru.jpg" alt="ざるそば" class="tooltip"></div>
+                    <div class="hover-text">
+                        <p class="text1">ざるそば</p>
+                        <p class="text2">600円（税抜）</p>
+                    </div>
+                </div>
+
+                <div class="hover">
+                    <div class="hover-img"> <img src="images/index/tororo.jpg" alt="とろろそば"></div>
+                    <div class="hover-text">
+                        <p class="text1">とろろそば</p>
+                        <p class="text2">800円（税抜）</p>
+                    </div>
+                </div>
+
+                <div class="hover">
+                    <div class="hover-img"><img src="images/index/tenzaru.jpg" alt="天ざるそば"></div>
+                    <div class="hover-text">
+                        <p class="text1">天ざるそば</p>
+                        <p class="text2">1,000円（税抜）</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-img">
+                <div>
+                    <p>温かいお蕎麦</p>
+                </div>
+
+                <div class="hover">
+                    <div class="hover-img"> <img src="images/index/kake.jpg" alt="かけそば"></div>
+                    <div class="hover-text">
+                        <p class="text1">かけそば</p>
+                        <p class="text2">500円（税抜）</p>
+                    </div>
+                </div>
+
+                <div class="hover">
+                    <div class="hover-img"><img src="images/index/sansai.jpg" alt="山菜そば"></div>
+                    <div class="hover-text">
+                        <p class="text1">山菜そば</p>
+                        <p class="text2">800円（税抜）</p>
+                    </div>
+                </div>
+
+                <div class="hover">
+                    <div class="hover-img"><img src="images/index/kamo.jpg" alt="かも南蛮そば"></div>
+                    <div class="hover-text">
+                        <p class="text1">鴨南蛮そば</p>
+                        <p class="text2">900円（税抜）</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--menu-->
+
+    <div id="access-link" class="access wrapper-2">
+        <div class="store">
+            <div>
+                <h2>【 営業時間のお知らせ 】</h2>
+                <dl>
+                    <dt>営業日</dt>
+                    <dd>金・土・日</dd>
+                    <dt>営業時間</dt>
+                    <dd>11：00～14：00</dd>
+                </dl>
+            </div>
+            <div>
+                <h2>【 アクセス 】</h2>
+                <dl>
+                    <dt>住所</dt>
+                    <dd>広島市安佐北区亀山2-3-27</dd>
+                    <dt>電話</dt>
+                    <dd>082-8××-××××</dd>
+                    <dt>電車でお越しの方</dt>
+                    <dd>JR可部線 あき亀山 徒歩2分</dd>
+                    <dt>車でお越しの方</dt>
+                    <dd>国道54号線 可部中央交差点を亀山方面へまがり1分</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3287.403638528321!2d132.49438025057313!3d34.51800024168946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1696832076962!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+    <!--access-->
+    <div class="go-top">
+        <a href="#"><img src="images/index/TOP.gif" alt="トップに戻る"></a>
+    </div>
+
+    <footer><small class="copyright">&copy;2023 sugiyama874</small></footer>
+</body>
+
+</html>
