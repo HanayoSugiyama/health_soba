@@ -1,0 +1,488 @@
+@use "variable"as v;
+
+header {
+    width: 100%;
+    padding: 10px 0;
+    height: 80px;
+}
+
+.header-wrapper {
+    max-width: 1320px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-wrapper h1 a {
+    display: block;
+    color: v.$c-font2;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+
+.header-wrapper h1 span {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        padding: 0;
+        background-color: v.$c-bg-b;
+    }
+}
+
+
+/*----------------
+    gnav部分
+-----------------*/
+.gnav {
+    width: 100%;
+    background-color: v.$c-bg-b;
+    font-size: 20px;
+}
+
+.gnav-wrapper {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+}
+
+.gnav-wrapper li {
+    border-left: v.$c-bg-v 1px solid;
+    text-align: center;
+    width: calc(100%/5);
+    transition: all 0.3s ease;
+    list-style-type: none;
+}
+
+.gnav-wrapper li:last-child {
+    border-right: v.$c-bg-v 1px solid;
+}
+
+.gnav-wrapper li:hover {
+    background-color: v.$c-bg-v;
+}
+
+.gnav-wrapper li a {
+    display: block;
+    padding: 10px 0;
+    color: v.$c-font2;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .gnav-wrapper {
+        position: fixed;
+        display: table;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #460e44;
+        visibility: hidden;
+        opacity: 0;
+        padding-top: 20%;
+    }
+
+    .gnav-wrapper li {
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        border-bottom: v.$c-bg-v 1px solid;
+        border-left: none;
+    }
+
+    .gnav-wrapper li:last-child {
+        border-right: none;
+    }
+
+    .menu-btn {
+        color: v.$c-font2;
+        cursor: pointer;
+        z-index: 100;
+        background-color: v.$c-bg-b;
+        max-width: 60px;
+        width: 60px;
+    }
+
+    .menu-btn i {
+        display: block;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .menu-btn span {
+        display: block;
+        padding: 0 0 10px 0;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .open {
+        transition: all .5s;
+        visibility: visible;
+        opacity: 1;
+        z-index: 10;
+    }
+
+    .menu-btn span::after {
+        content: attr(data-txt-menu);
+    }
+
+    .open span::after {
+        content: attr(data-txt-close);
+    }
+
+}
+
+/*--------------------
+       hero部分
+---------------------*/
+.hero {
+    background-image: url(../../images/index/kurogin2.jpg);
+    max-width: 1920px;
+    height: 848px;
+    
+}
+
+.hero-img{
+    display: block;
+    height: fit-content;
+    margin: 0 0 0 auto;
+    padding: 400px 0 0 0;
+  
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+    }
+    .hero-text {
+        font-size: 32px;
+        padding: 100px 0 0 40px;
+    }
+}
+
+/*--------------------
+    画像ループ部分
+---------------------*/
+.loop-sobauti {
+    display: flex;
+    width: 100vw;
+    height: 120px;
+    overflow: hidden;
+}
+
+.loop-sobauti img {
+    width: auto;
+    height: 100%;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes loop2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+.loop-sobauti img:first-child {
+    animation: loop 50s -25s linear infinite;
+}
+
+.loop-sobauti img:last-child {
+    animation: loop2 50s linear infinite;
+}
+
+@media (max-width: 768px) {
+    .loop-sobauti {
+        display: flex;
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+/*--------------------
+    コンテンツ部分
+---------------------*/
+.wrapper {
+    max-width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    color: v.$c-font
+}
+
+.wrapper h2 {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 80px 0 40px;
+    margin: 0 auto;
+}
+
+.wrapper p {
+    font-size: 24px;
+}
+
+.hear {
+    text-align: right;
+}
+
+.hear img {
+    width: 180px;
+    margin-top: 40px;
+}
+
+.efficacy,
+.menu {
+    background-image: url(../../images/index/white-block.jpg);
+    background-repeat: repeat;
+}
+
+.sticking {
+    background-color: v.$c-bg-w;
+}
+
+/*効能*/
+.main {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1230px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.main-img {
+    max-width: 600px;
+    height: auto;
+   
+}
+
+.main-text {
+    margin-bottom: 40px;
+}
+
+
+/*こだわり*/
+.no-main {
+    max-width: 1230px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.no-main-text {
+    margin-bottom: 40px;
+}
+
+.gri {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1040px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+@media (max-width:768px) {
+    .wrapper {
+        height: auto;
+    }
+    .wrapper h2 {
+        padding: 10px 10px;
+    }
+}
+
+/*---------------
+    モーダル
+----------------*/
+.hide-area {
+    display: none;
+}
+
+.info-list {
+    display: flex;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before {
+    background: #ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+    background: #666;
+}
+
+@media (max-width: 768px) {
+    .info-list {
+        display: block;
+        height: auto;
+    }
+}
+
+/*メニュー*/
+.grid-img {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+/*----------------
+      ホバー
+-----------------*/
+.hover {
+    position: relative;
+    width: 240px;
+    height: auto;
+    overflow: hidden;
+}
+
+.hover .hover-img {
+    margin: 0;
+    padding: 0;
+}
+
+.hover-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hover .hover-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.65);
+    /*要素の大きさを0にしt表示させない*/
+    transform: scale(0);
+    /*ホバーの動き方*/
+    transition: .35s ease-in-out;
+}
+
+.hover .hover-text .text1 {
+    font-size: 22px;
+    padding: 10px 20px;
+}
+
+.hover .hover-text .text2 {
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+/*ホバーエフェクト*/
+.hover:hover .hover-text {
+    /*要素の大きさを1にして表示*/
+    transform: scale(1);
+}
+
+/*-----------------------
+       フッター部分
+------------------------*/
+.wrapper-2 {
+    max-width: 1320px;
+    height: auto;
+}
+
+.access {
+    display: flex;
+    place-content: center;
+    margin: 30px auto;
+    max-width: 1230px;
+    color: v.$c-font2;
+}
+
+
+.store h2 {
+    font-size: 24px;
+    padding: 30px 0;
+}
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+dt {
+    width: 40%;
+}
+
+dd {
+    width: 60%;
+}
+
+.to-top{
+    max-width: 1320px;
+}
+.go-top img {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 70px;
+    height: auto;
+}
+
+@media (max-width:768px) {
+
+     .access {
+        display: block;
+    }
+
+    .store {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 20px;
+    }
+
+    iframe {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    background-image: url(../../images/back_image.jpg);
+    background-repeat: repeat-x;
+    padding: 10px 50px;
+    text-align: center;
+
+}
+
+.copyright {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
