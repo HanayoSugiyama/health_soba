@@ -7,7 +7,7 @@
 
     <!--css-->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- jQuery -->
     <script src="js/home.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,7 +18,133 @@
 
     <link rel="icon" href="images/icon_soba.gif">
 </head>
+
+<header>
+    <h1>蕎麦の効能</h1>
+</header>
+
+<div class="breadcrumb">
+    <nav class="breadcrumb">
+        <ol class="bc__list flex">
+            <li class="bc__item"><a href="home.html" class="bc link">トップ</a></li>
+            <li class="bc__item">蕎麦の効能</li>
+        </ol>
+    </nav>
+</div>
 <body>
+    <div class="health">
+        <div class="hypertension">
+            <h2>高血圧予防</h2>
+            <div class="health-img"><img src="../images/kohnoh/kohketuatu.jpg" alt="高血圧"></div>
+            <p>蕎麦には高血圧の予防が期待されています。<br>
+                その有効な栄養素が、毛細血管を強化する作用がある「ルチン」。<br>
+                「ルチン」はポリフェノールの一種で<br>
+                ・毛細血管を修復<br>
+                ・血液をさらさらにする<br>
+                ・老化や認知症を防ぐ<br>
+                ・ビタミンCの吸収を助ける<br>
+                など、さまざまな効果があります。<br>
+                「ルチン」を含む食物は穀物の中では蕎麦だけです。
+            </p>
+        </div>
+        <!--/.高血圧-->
+        <div class="recovery">
+            <h2>疲労回復</h2>
+            <div class="health-img"><img src="../images/kohnoh/hirou.jpg" alt="疲労回復">
+            </div>
+            <p>
+                蕎麦には「ビタミンB1」や「ビタミンB2」等のビタミンB群が豊富に含まれています。<br>
+                【ビタミンB1 糖質をエネルギーに変える】<br>
+                ビタミンB1は、炭水化物からのエネルギー産生と皮膚や粘膜の健康維持を助ける栄養素です。<br>
+                脳や神経の機能を維持する役割を担うため、イライラを解消するなど、精神を安定する効能があります。<br>
+                【ビタミンB2 脂質をエネルギーに変える】<br>
+                ビタミンB2は、主に皮膚や粘膜の健康維持を助ける働きをするビタミンで、特に脂質を体内でエネルギーにするなどの代謝を支える重要な働きをしています。<br>
+            </p>
+        </div>
+        <!--/.疲労回復-->
+        <div class="detox">
+            <h2>デトックス効果</h2>
+            <div class="health-img"><img src="../images/kohnoh/detokkusu.jpg" alt="デトックス"></div>
+            <p>
+                蕎麦には、食物繊維の一種「ヘミセルロース」が含まれています。<br>
+                「ヘミセルロース」には、腸内の善玉菌を増殖させる働きがあり、腸内環境を整え、便秘の解消に効果があります。<br>
+                食物繊維は低カロリーで肥満の予防にもなるので、糖尿病、脂質異常症、高血圧、動脈硬化など、さまざまな生活習慣病の予防に効果があります。<br>
+            </p>
+        </div>
+        <!--/.デトックス-->
+        <div class="diet">
+            <h2>ダイエット効果</h2>
+            <div class="health-img"><img src="../images/kohnoh/diet.jpg" alt="ダイエット">
+            </div>
+            <p>
+                低カロリーで腹持ちの良い蕎麦はダイエットをする人にとって強い味方です。<br>
+                【低GI値】<br>
+                GI値が低い食品は腹持ちが良く、満腹感が長く持続されることから、GI値が低い食品ほど太りにくいと言われています。<br>
+                【低カロリー】<br>
+                ダイエットは、摂取カロリー＜消費カロリーとなることで、体重を減少させます。<br>
+                うどんに次いで2番目にカロリーが低いことが分かります。<br>
+                【炭水化物含有量が低い】<br>
+                炭水化物は太ると言われますが、炭水化物は糖質と食物繊維で出来ていて、太るとは厳密に言うと糖質によるものです。<br>
+                【たんぱく質が豊富】<br>
+                筋肉はたんぱく質でできています。そばにはうどんの1.5倍以上のたんぱく質を含んでいる食材なので、ダイエットをする際には適した食材だと言えます。
+            </p>
+        </div>
+        <!--/.diet-->
+    </div>
+
+        <div class="health-table">
+            <table>
+                <tr>
+                    <th>種類</th>
+                    <th>GI値</th>
+                    <th>カロリー</th>
+                    <th>炭水化物</th>
+                    <th>タンパク質</th>
+                </tr>
+                <tr>
+                    <td class="icon pan">食パン</td>
+                    <td>95</td>
+                    <td>248</td>
+                    <td>46.4</td>
+                    <td>8.9</td>
+                </tr>
+                <tr>
+                    <td class="icon udon">うどん</td>
+                    <td>85</td>
+                    <td>95</td>
+                    <td>21.6</td>
+                    <td>2.6</td>
+                </tr>
+                <tr>
+                    <td class="icon rice">ごはん</td>
+                    <td>84</td>
+                    <td>218</td>
+                    <td>48.23</td>
+                    <td>3.25</td>
+                </tr>
+                <tr>
+                    <td class="icon ramen">中華麺</td>
+                    <td>65</td>
+                    <td>133</td>
+                    <td>29.2</td>
+                    <td>4.9</td>
+                </tr>
+                <tr>
+                    <td class="icon soba">そば</td>
+                    <td>54</td>
+                    <td>130</td>
+                    <td>26</td>
+                    <td>4.8</td>
+                </tr>
+            </table>
+        </div>
     
+    <!--/.health-->
+
+    <footer><small class="copyright">&copy;2023 sugiyama874</small></footer>
+
 </body>
+
 </html>
+
+    

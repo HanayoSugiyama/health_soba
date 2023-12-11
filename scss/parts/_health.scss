@@ -1,0 +1,118 @@
+@use "variable"as v;
+
+html {
+    font-size: 100%;
+}
+
+body {
+    text-align: center;
+    font-family: 'Klee One', cursive;
+    color: #ffffff;
+    background-color: black;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1 {
+    margin: 30px 0;
+    font-size: 40px;
+    background-image: url(../images/back_image.jpg);
+    background-repeat: repeat-x;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+.flex {
+    display: flex;
+}
+.breadcrumb li:after{
+    content: '>';
+    padding: 0 6px;
+    color: #ffffff;
+}
+.breadcrumb li:last-child:after {
+    content: '';
+  }
+
+.bc__item {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.health {
+    display: grid;
+    gap: 30px 45px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: left;
+}
+.health h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 30px;
+}
+.health img {
+    max-width: 100%;
+    object-fit: cover;
+    box-shadow: 10px 10px 0 #824880;
+    overflow: hidden;
+}
+
+
+.health p {
+    font-size: 16px;
+    padding: 30px 0;
+}
+
+.health-img {
+    text-align: center;
+}
+
+table {
+    max-width: 100%;
+    width: 600px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 30px auto 30px;
+   
+}
+
+table th,table td{
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid #824880;
+}
+
+table tr:first-child{
+    background-color: #824880;
+}
+
+table td {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+
+footer {
+    background-image: url(../images/back_image.jpg);
+    background-repeat: repeat-x;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
