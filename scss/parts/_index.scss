@@ -158,9 +158,9 @@ header {
 
 .hero-img{
     display: block;
-    height: fit-content;
-    margin: 0 0 0 auto;
-    padding: 400px 0 0 0;
+ margin-left: 50%;
+ padding-top: 15%;
+
   
 }
 
@@ -286,6 +286,16 @@ header {
     margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+    .wrapper {
+        height: 1200;
+    }
+    
+    .main {
+        display: block;
+    }
+    
+}
 
 /*こだわり*/
 .no-main {

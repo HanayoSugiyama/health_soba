@@ -15,11 +15,15 @@ a {
     color: #ffffff;
 }
 
+.header__title {
+    background-image: url(../images/back_image.jpg);
+    background-repeat: repeat-x;
+}
+
+
 h1 {
     margin: 30px 0;
     font-size: 40px;
-    background-image: url(../images/back_image.jpg);
-    background-repeat: repeat-x;
 }
 
 ul,
